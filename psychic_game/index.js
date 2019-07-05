@@ -5,7 +5,7 @@ var game = {
     chance: [],
     wins: 0,
     losses: 0,
-    count: 10,
+    count: 9,
     comp_choice: null,
 
 
@@ -75,6 +75,7 @@ var game = {
 
 game.comp_choice = game.letters[Math.floor(Math.random() * game.letters.length)]
 console.log(game.comp_choice)
+game.Static()
 
 document.onkeyup = function(e){
     let KEY = e.key
